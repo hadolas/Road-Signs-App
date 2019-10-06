@@ -8,9 +8,13 @@ class App extends Component {
 	constructor() {
 		super();
 		this.state = {
-			signs: signs,
+			signs: [],
 			searchfield: ''
 		}
+	}
+
+	componentDidMount() {
+		this.setState({signs: signs})
 	}
 
 	onSearchChange = (event) => {
