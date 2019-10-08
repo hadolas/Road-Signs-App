@@ -24,8 +24,9 @@ class App extends Component {
 
 
 	render() {
-		const filteredSigns = this.state.signs.filter(sign => {
-			return sign.img.toLowerCase().includes(this.state.searchfield.toLowerCase());
+		const {signs, searchfield} = this.state;
+		const filteredSigns = signs.filter(sign => {
+			return sign.img.toLowerCase().includes(searchfield.toLowerCase());
 		});
 		return (
 			<div className='tc'>
