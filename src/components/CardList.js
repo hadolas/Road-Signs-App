@@ -19,8 +19,8 @@ const CardList = (props) => {
 						<Card 
 						key={signs[i].id} 
 						id={signs[i].id} 
-						def={signs[i].definition}
 						img={signs[i].img}
+						type={signs[i].type}
 						/>
 					);
 				})
