@@ -9,6 +9,7 @@
 /coverage
 /public/imgs/
 /src/signs.js
+/src/components/Scroll.js
 
 # production
 /build
